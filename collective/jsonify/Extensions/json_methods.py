@@ -14,6 +14,7 @@ def export_content(self):
         basedir='/tmp',  # absolute path to directory for the JSON export
         skip_callback=lambda item: False,  # optional callback. Returns True to skip an item.  # noqa
         extra_skip_classname=[],  # optional list of classnames to skip
+        extra_skip_paths=['membrane_tool', 'portal_postcode'],
         # batch_start=0,
         # batch_size=5000,
         # batch_previous_path='/absolute/path/to/last/exported/item'
